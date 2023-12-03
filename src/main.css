@@ -10,3 +10,20 @@
     font-family: CircularSp;
     src: url("fonts/CircularSpotifyText-medium.otf") format("opentype");
 }
+
+.or {
+  display: flex;
+  flex-direction: row;
+}
+.or:before, .or:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #727272;
+  margin: auto;
+}
+.or:before {
+  margin-right: 10px
+}
+.or:after {
+  margin-left: 10px
+}
