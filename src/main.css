@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,11 +16,6 @@ body {
     src: url("../fonts/CircularSpotifyText-medium.otf") format("opentype");
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 button{
   cursor: pointer;
 }
