@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link href="../dist/output.css" rel="stylesheet" />
-</head>
+    <!-- <link href="../dist/output.css" rel="stylesheet" /> -->
+    <link href="main.css" rel="stylesheet" />
+  </head>
 
-<body class="bg-[#121212] font-CircularSp text-white h-full flex flex-col justify-between">
-
-    <nav class="p-9">
-        <img src="../images/spotify-logo.svg" alt="spotify-logo">
+  <body class="signup-body">
+    <nav class="signup-nav">
+      <img src="../images/spotify-logo.svg" alt="spotify-logo" />
     </nav>
-    <section class="mx-auto max-w-xs font-bold">
-        <h1 class="text-5xl font-CircularSpTitle tracking-tighter">Sign up to start listening</h1>
+    <section class="signup-info">
+      <h1>Sign up to start listening</h1>
 
-        <form action="" class="w-full my-8">
-            <label for="email" class="text-sm">Email address</label><br>
-            <input class="w-full mb-2 p-3 rounded-md bg-transparent border font-normal border-[#727272] focus:border-white outline-none " type="email" id="email"
-            placeholder="name@domain.com">
+      <form action="" class="signup-form">
+        <label for="email">Email address</label><br />
+        <input type="email" id="email" placeholder="name@domain.com" />
+        <a href="#" class="use-number">Use phone number instead.</a>
 
-            <a href="#" class="text-[#1ed760] text-sm font-normal underline">Use phone number instead.</a>
+        <button type="button" class="signup-btn">Next</button>
+        <p class="or">or</p>
 
-            <button type="button" class="w-full bg-[#1ed760] hover:bg-[#2bde6a] text-black  py-3 px-4 mt-6 rounded-full">Next</button>
-            <p class="or my-8">or</p>
+        <div class="line">
+          <button type="button" class="signup-sm-btn">
+            <img src="../images/google.svg" alt="" />
+            Sign up with Google
+          </button>
+          <button type="button" class="signup-sm-btn">
+            <img src="../images/facebook.svg" alt="" />
+            Sign up with Facebook
+          </button>
+        </div>
+      </form>
 
-            <div class="w-full  border-b border-[#292929] pb-5">
-                <button type="button" class="border border-[#727272] w-full py-3 px-4 rounded-full flex hover:border-white">
-                    <img class="mr-10" src="../images/google.svg" alt="">
-                    Sign up with Google</button>
-                <button type="button" class="border border-[#727272] w-full py-3 px-4  rounded-full flex hover:border-white my-3">
-                    <img class="mr-10" src="../images/facebook.svg" alt="">
-                    Sign up with Google</button>
-            </div>
-
-        </form>
-        <p class="text-center font-normal text-[#a7a7a7]">Already have an account? <a href="#" class="underline text-white">Log in here.</a></p>
+      <p class="have-acnt">
+        Already have an account?
+        <a href="#">Log in here.</a>
+      </p>
     </section>
 
-    <footer class="mx-auto max-w-xs text-[11px] text-center text-[#a7a7a7] mt-7">
-        <p>This site is protected by reCAPTCHA and the Google <a class="underline" href="#">Privacy Policy</a> and <a
-                class="underline" href="#">Terms of Service</a> apply.</p>
+    <footer class="signup-footer">
+      <p>
+        This site is protected by reCAPTCHA and the Google
+        <a href="#">Privacy Policy</a> and
+        <a href="#">Terms of Service</a> apply.
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
