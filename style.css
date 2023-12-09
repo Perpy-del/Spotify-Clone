@@ -19,12 +19,9 @@ body{
 /* Add a margin to the main section */
 main{
 margin: 3rem 5rem;
-}
-
-/* Align the text on the num-section */
-.num-section{
 text-align: center;
 }
+
 
 /* Style the paragraph tag */
 p{
@@ -83,4 +80,38 @@ input::placeholder {
         font-weight: 600;
         color: #000;
     }
-    
+
+    /* For Responsiveness across all devices */
+  @media only screen and (max-width: 480px) {
+    .logo-image img{
+        width: 80px;
+    }
+    .topnav a {
+      float: left;
+      padding: 32px 32px;
+  
+    }
+    .num-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    select{ 
+        margin: 19px 0;  
+        padding: 12px 10px 12px 12px;
+        }
+    input{
+          padding: 14px 80px 14px 12px;
+          margin: 14px;
+          }
+    button{
+            margin: 1rem;
+            padding: 16px 162px;
+            border-radius: 50px;
+        }
+    .next-section{
+          width: 240px;
+          margin: 0;
+          }
+          
+  }
