@@ -44,7 +44,7 @@ body{
     }
 }
 
-.login-form{
+form {
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -230,6 +230,8 @@ input:checked + .slider:before {
     width:100%;
     padding: 0px 0px;
     margin:32px 0px;
+    appearance: none;
+    background-image: none;
     
     
 }
@@ -252,7 +254,13 @@ input:checked + .slider:before {
 }
 
 
-a {
+.forgot-password > a {
+    text-decoration: underline;
+    color:white;
+    font-size: 0.9rem;
+    font-weight:400;
+}
+.sign-up-call > a {
     text-decoration: underline;
     color:white;
     font-size: 0.9rem;
@@ -260,7 +268,10 @@ a {
 }
 
 
-a:hover {
+.forgot-password a:hover {
+    color:#1ed760;
+}
+.sign-up-call a:hover {
     color:#1ed760;
 }
 

@@ -19,18 +19,18 @@
             <hr>
 
             <!-- login details form begins here -->
-            <div class="login-form">
+            <form action="submit_form.php" method="post" target="_blank">
                 <!-- Input field for email or username -->
                 <div class="field">
                     <label for="email, username">Email or username:</label>
-                    <input type="email, text" id="email, username" name="email, username" placeholder="Email or username">
+                    <input type="email, text" id="email, username" name="email, username" placeholder="Email or username" required>
                 </div>
 
                 <!-- Input field for password -->
                 <div class="field">
                     <label for="password">Password:</label>
                     <div class="input-container">
-                        <input type="passsword" id="password" name="password" placeholder="Password">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
                         <img  class="svg" src="Images/Spotify-eye-slash-regular.svg" alt="eye-slash-icon">
                     </div>
                     
@@ -46,14 +46,14 @@
                 </div>
                 
                 <!-- Login button here/call to action -->
-                <button class=login-button id="login">Log In</button>
+                <button class=login-button type="submit">Log In</button>
                 
                 <!-- forgot password link -->
                 <div class="forgot-password">
                     <a href="*#">Forgot your password?</a>
                     
                 </div>
-            </div>
+            </form>
             <!-- login form ends here -->
 
             <hr>
