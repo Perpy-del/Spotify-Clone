@@ -10,7 +10,7 @@
         padding: 0;
       }
       body {
-        background-color: #000000;
+        background-color: #101010;
         margin-top: 18px;
         font-family: "Times New Roman", Times, serif;
         
@@ -23,16 +23,19 @@
         text-decoration: none;
         font-weight: bold;
         font-size: 16px;
+        gap: 10px;
+        margin-right: 20px;
       }
       nav div {
-        margin-right: 20px;
-        margin-left: 10px;
-        margin-top: 5px;
+        /*margin-right: 20px;
+        margin-left: 8px;*/
+        
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
       }
       nav :hover{
         color: white;
+        
         
       }
       nav a{
@@ -44,23 +47,35 @@
       .vertical {
         border-left: 3px solid #aca9a9;
         height: 20px;
+        
       }
 
        .btn  {
         margin-left: 13px;
         
         background-color: #ffffff;
-        width: 85px;
-        height: 35px;
+        width: 105px;
+        height: 50px;
         border: none;
         color: black;
-        border-radius: 18px;
+        border-radius: 25px;
         transition: 0.2s;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: px;
         }
-    
-      
-  
-
+        .psg{
+          display: flex;
+          margin-left: 10px;
+          margin-right: 10px;
+          align-items: center;
+          gap: 10px;
+          
+        }
+        
+         
+        
+        
      nav .btn a {
         color: black;
       }
@@ -69,10 +84,61 @@
         transform: scale(1.2);
         background-color: #fff4f4;
       }
+      .sl{
+        margin-left: 15px;
+      }
+
+      @media (max-width:780px) {
+        nav{
+          flex-direction: column;
+          align-items: flex-start;
+        
+        }
+
+        }
+
+        
+         
+        .arrow {
+            border: solid #aca9a9;
+             border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 5px;
+            cursor: not-allowed;
+            margin-right: 10px;
+            
+           
+          }
+
+          .right {
+             transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+           
+}
+
+          .left {
+           transform: rotate(135deg);
+           -webkit-transform: rotate(135deg);
+           margin-left: 200px;
+          } 
+          
+        
+      
+    
+
     </style>
   </head>
   <body>
+    
     <nav>
+
+       <p class="arrow left"></p>
+      <p class="arrow right"> </p>
+      
+        
+ 
+       
+      <div class="psg">
       <div>
         <a href="#"> Premium </a>
       </div>
@@ -82,10 +148,11 @@
       <div>
         <a href="#"> Download </a>
       </div>
+    </div>
 
       <div class="vertical"></div>
 
-        <div>
+        <div class="sl">
           <a href="#">Sign up</a>
           <button class="btn">
             <a href="#">Log in</a>
