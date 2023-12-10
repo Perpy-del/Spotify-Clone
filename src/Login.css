@@ -113,19 +113,16 @@ input:hover{
     border: 1px solid #ffffff;
 }
 
-.svg{
-    width:25px;
-    height:25PX;
+svg{
     position: absolute;
     top: 50%;
     transform:  translateY(-80%);
     display: flex;
-    fill: #a7a7a7;
     right: 12px;
 }
-.svg:hover{
-   
-    fill: #ffffff;
+
+svg:hover{
+   fill:#ffffff; 
 }
 
 .toggle-container {
@@ -137,8 +134,7 @@ input:hover{
 }
 
 .toggle-container label{
-    margin:0;
-    
+    margin:0;  
 }
 
 .toggle {
@@ -237,13 +233,8 @@ input:checked + .slider:before {
 }
 
 .login-button:hover{
-    width:324px;
-    padding:1px 8px;
-    font-weight:700;
-   
-   
-   
-    
+    transform: scale(1.04);
+    background-color: #1fdf64;
 }
 
 .forgot-password{
@@ -279,7 +270,7 @@ input:checked + .slider:before {
 hr {
     max-width: 534px;
     width:100%;
-    margin: 24px 100px;
+    margin: 32px 100px;
     border-right: none;
     border-bottom: none;
     border-left: none;
