@@ -6,8 +6,10 @@
     <title>Spotify Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Login.css">
+
+ 
 </head>
 
 <body>
@@ -27,7 +29,11 @@
                 <!-- Input field for password -->
                 <div class="field">
                     <label for="password">Password:</label>
-                    <input type="passsword" id="password" name="password" placeholder="Password">
+                    <div class="input-container">
+                        <input type="passsword" id="password" name="password" placeholder="Password">
+                        <img  class="svg" src="Images/Spotify-eye-slash-regular.svg" alt="eye-slash-icon">
+                    </div>
+                    
                 </div>
 
                 <!-- toggle for "remember me" section -->
@@ -40,11 +46,12 @@
                 </div>
                 
                 <!-- Login button here/call to action -->
-                <button class=login-button id="login">Login</button>
+                <button class=login-button id="login">Log In</button>
                 
                 <!-- forgot password link -->
                 <div class="forgot-password">
                     <a href="*#">Forgot your password?</a>
+                    
                 </div>
             </div>
             <!-- login form ends here -->
