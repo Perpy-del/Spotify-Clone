@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  
+}
+
+.spotify-background {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+.spotify-logo {
+  width: 40%;
+  height: auto;
+  cursor: pointer;
+}
+.first-components {
+  background-color: rgba(255, 255, 255, 0.07);
+  max-width: 25%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.second-components {
+  background-color: rgba(255, 255, 255, 0.07);
+  max-width: 25%;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.first-component {
+  padding: 8px 0;
+}
+
+.playlist-bars {
+  overflow-y: auto;
+  height: 150px;
+}
+
+.playlist {
+  background-color: rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 0 0;
+}
+.playlist h4 {
+  margin: 5px 0 10px;
+}
+
+.create-playlist {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5rem;
+  margin: 25px 0 5px;
+  cursor: pointer;
+}
+
+.main-icon-flex {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+
+}
+
+.icon-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.comment {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  justify-content: center;
+  align-items: center;
+  gap: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.comment p {
+  font-size: 10px;
+}
+
+/* .icon-flex p {
+   margin-left:-120px ;
+*/
+
+.img-size {
+  width: 20px;
+  height: 20px;
+  color: #efefef;
+}
+
+.component-hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.component-hover:hover {
+  color: white;
+}
+
+.add-playlist-position {
+  position: relative;
+}
+
+.add-playlist {
+  background-color: rgb(35, 35, 35);
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+
+  position: absolute;
+  right: -20px;
+  top: -25px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: all 0.5s;
+}
+
+.add,
+.library {
+  cursor: pointer;
+}
+
+.add:hover + .add-playlist {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.add-library {
+  background-color: rgb(35, 35, 35);
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+
+  position: absolute;
+  left: -20px;
+  top: -25px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: all 0.5s;
+}
+
+.library:hover + .add-library {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.svg{
+  width: 20px;
+  height: 20px;
+  fill: gray;
+}
+.svg:hover{
+  fill: white;
+}
+#english{
+  box-shadow: none;
+  border-radius: 9999px;  
+  border: 2px groove white;
+  padding: 1px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: normal;
+  background-color: #121212;
+  fill: white;
+}
+.pointer{
+  cursor: default;
+}
