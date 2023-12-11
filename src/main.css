@@ -733,3 +733,139 @@ p {
 .footer-box-socials > a:hover {
     background-color: #aca9a9;
 }
+
+/* SIGNUP PAGE BY BLESSING */
+.signup-body{
+    background-color: #121212;
+    font-family: "CircularSp";
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .signup-nav {
+    padding: 32px;
+  }
+  
+  .signup-info{
+    margin: 0 auto;
+    max-width: 324px;
+  }
+  .signup-info > h1{
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -0.045em;
+    font-family: "CircularSpTitle";
+  }
+  .signup-form{
+    width: 100%;
+    margin: 42px 0 32px;
+  }
+  .signup-form > label{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 13px 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #727272;
+    font-size: 16px;
+    outline: none;
+  }
+  .signup-form input::placeholder{
+    color: #a7a7a7;
+    font-family: "CircularSp";
+  }
+  .signup-form input:focus {
+    border: 1px solid white;
+   }
+  .signup-form input:hover, .signup-sm-btn:hover {
+   border: 1px solid white;
+   outline: none;
+  }
+  .use-number{
+    color: #1ed760;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  
+  .or {
+    display: flex;
+    flex-direction: row;
+    margin: 32px 0;
+    font-size: 14px;
+  }
+  .or:before, .or:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #727272;
+    margin: auto;
+  }
+  .or:before {
+    margin-right: 10px
+  }
+  .or:after {
+    margin-left: 10px
+  }
+  .signup-btn{
+    width: 100%;
+    background-color: #1ed760;
+    color: #000;
+    padding: 14px 16px;
+    margin-top: 22px;
+    border-radius: 9999px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+  font-family: "CircularSp";
+  }
+  .signup-btn:hover{
+    background-color: #2bde6a;
+  }
+  .signup-sm-btn{
+    width: 100%;
+    border: 1px solid #727272;
+    padding: 11px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 9999px;
+    margin-bottom: 8px;
+    background: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "CircularSp";
+  }
+  .signup-sm-btn > img{
+    margin-right: 56px;
+  }
+  .line{
+    border-bottom: 1px solid #292929;
+    padding-bottom: 24px;
+  }
+  .have-acnt{
+    color: #a7a7a7;
+    text-align: center;
+    font-weight: normal;
+  }
+  .have-acnt > a{
+    text-decoration: underline;
+    color: #ffffff;
+  }
+  .signup-footer {
+    margin: 36px auto 12px;
+    max-width: 324px;
+    font-size: 11px;
+    text-align: center;
+    color: #a7a7a7;
+    padding: 0 10px;
+  }
+  .signup-footer > p > a{
+    text-decoration: underline;
+    color: #a7a7a7;
+  }
