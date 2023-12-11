@@ -737,7 +737,7 @@ p {
 /* SIGNUP PAGE BY BLESSING */
 .signup-body{
     background-color: #121212;
-    font-family: "CircularSp";
+    font-family: "Circular";
     color: #ffffff;
     height: 100%;
     display: flex;
@@ -746,6 +746,7 @@ p {
   }
   .signup-nav {
     padding: 32px;
+    align-self: flex-start;
   }
   
   .signup-info{
@@ -756,7 +757,7 @@ p {
     font-size: 48px;
     line-height: 1;
     letter-spacing: -0.045em;
-    font-family: "CircularSpTitle";
+    font-family: "Circular";
   }
   .signup-form{
     width: 100%;
@@ -779,7 +780,7 @@ p {
   }
   .signup-form input::placeholder{
     color: #a7a7a7;
-    font-family: "CircularSp";
+    font-family: "Circular";
   }
   .signup-form input:focus {
     border: 1px solid white;
@@ -822,7 +823,8 @@ p {
     border: none;
     font-weight: bold;
     font-size: 16px;
-  font-family: "CircularSp";
+    font-family: "Circular";
+    cursor: pointer;
   }
   .signup-btn:hover{
     background-color: #2bde6a;
@@ -839,7 +841,8 @@ p {
     color: #ffffff;
     font-weight: bold;
     font-size: 16px;
-    font-family: "CircularSp";
+    font-family: "Circular";
+    cursor: pointer;
   }
   .signup-sm-btn > img{
     margin-right: 56px;
