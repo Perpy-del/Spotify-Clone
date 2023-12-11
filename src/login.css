@@ -1,7 +1,38 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('./Circular/CircularSpotifyText-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Circular';
+    src: url('./Circular/CircularSpotifyText-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Circular';
+    src: url('./Circular/CircularSpotifyText-Book.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Circular';
+    src: url('./Circular/CircularSpotifyText-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Circular';
+    src: url('./Circular/CircularSpotifyText-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Circular', sans-serif;
   }
   
   body {
@@ -25,7 +56,7 @@
   .login-panel {  
     background-color: rgb(5, 5, 5);
     height: 400px;
-    width: 800px;
+    width: 740px;
     margin: auto;
     border-radius: 8px;
   }
