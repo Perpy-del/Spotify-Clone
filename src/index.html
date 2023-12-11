@@ -3,13 +3,371 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Spotify Clone - Web Player</title>
     <link href="./main.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <!-- BODY -->
+    <div class="main-container">
+      <!-- Sidenav -->
+      <div class="side-nav">
+        <div class="first-components">
+          <img
+            src="./icons/spotify-logo.png"
+            class="spotify-logo first-component"
+            alt=""
+          />
+
+          <div class="home">
+            <i class="fa-solid fa-house fa-lg" style="margin-right: 20px;"></i>
+            Home
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass fa-lg" style="margin-right: 20px;"></i>
+            Search
+          </div>
+        </div>
+        <div class="second-components add-playlist-position">
+          <div class="icon-flex">
+            <div class="library">
+              <svg
+                class="svg"
+                xmlns="http://www.w3.org/2000/svg"
+                data-encore-id="icon"
+                role="img"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                class="Svg-sc-ytk21e-0 iYxpxA"
+              >
+                <path
+                  d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                />
+              </svg>
+            <h3>Your Library</h3> 
+            </div>
+            <p class="add-library">Collapse your library</p>
+            <button class="add">
+              <i class="fa-solid fa-plus fa-lg"></i></i>
+            </button>
+            <p class="add-playlist" title="">Create playlist or folder</p>
+          </div>
+
+          <br />
+
+          <div class="playlist-bars">
+            <div class="playlist">
+              <h4 class="pointer">Create your first playlist</h4>
+
+              <p class="pointer2">It's easy, we'll help you</p>
+
+              <span class="create-playlist">
+                <p>Create playlist</p>
+              </span>
+            </div>
+            <div class="playlist">
+              <h4 class="pointer">Let's find some podcasts to follow</h4>
+
+              <p class="pointer2">We'll keep you updated on new episodes</p>
+
+              <span class="create-playlist">
+                <p>Browse podcasts</p>
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="comment">
+              <p>Legal</p>
+              <p>Privacy Center</p>
+              <p>Privacy Policy</p>
+              <p>Cookie Settings</p>
+              <p>About Ads</p>
+              <p>Accessibility</p>
+              <p>Cookies</p>
+            </div>
+            <br />
+            <div class="english">
+              <img src="./images/globe.svg" alt="globe-icon" />
+              <p>English</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="main-section">
+        <!-- <div> -->
+        <!-- Top Nav Bar -->
+        <header class="top-nav"></header>
+        <!-- Hero Section -->
+        <div class="hero-section">
+          <!-- <div class="hero-top_words">
+            <h1>Spotify Playlists</h1>
+            <h3>Show all</h3>
+          </div>
+          <div class="show-menu">
+            <div class="show-menu_item" id="showHide">
+              <div class="image_container">
+                <img
+                  src="./images/spotify_one.webp"
+                  alt="spotify_items"
+                  class="show-menu_image"
+                />
+                <div class="overlay">
+                  <i class="fa-brands fa-spotify" style="color: #99402a"></i>
+                  <h4
+                    style="
+                      font-size: 14px;
+                      font-weight: 900;
+                      color: #99402a;
+                      margin-left: 80px;
+                    "
+                  >
+                    Happy Hits
+                  </h4>
+                </div>
+              </div>
+              <h3 title="Happy Hits">Happy Hits!</h3>
+              <h4>Hits to boost your mood and fill you with happiness!</h4> -->
+              <!-- <i
+                class="fa-solid fa-play fa-lg"
+                style="
+                  background-color: rgb(68, 233, 68);
+                  color: #0c0d0d;
+                  border-radius: 70%;
+                  padding: 27px 20px;
+                "
+              >
+            </i> -->
+            <!-- </div>
+            <div class="show-menu_item" id="showHide">
+              <div class="image_container">
+                <img
+                  src="./images/spotify_three.jpg"
+                  alt="spotify_items"
+                  class="show-menu_image"
+                />
+                <div class="overlay">
+                  <i class="fa-brands fa-spotify" style="color: yellow"></i>
+                  <h4
+                    style="
+                      font-size: 18px;
+                      font-weight: 900;
+                      color: white;
+                      margin-left: 80px;
+                      text-align: right;
+                    "
+                  >
+                    Colorful Mood
+                  </h4>
+                </div>
+              </div>
+              <h3 title="Colorful Music">Colorful Music</h3>
+              <h4>Listen to music that colors your daily life.</h4>
+            </div>
+            <div class="show-menu_item" id="showHide">
+              <div class="image_container">
+                <img
+                  src="./images/spotify_two.jpg"
+                  alt="spotify_items"
+                  class="show-menu_image"
+                />
+                <div class="overlay">
+                  <i class="fa-brands fa-spotify" style="color: pink"></i>
+                  <h4
+                    style="
+                      font-size: 16px;
+                      font-weight: 900;
+                      color: balck;
+                      margin-left: 80px;
+                    "
+                  >
+                    Hip Hop Morning
+                  </h4>
+                </div>
+              </div>
+              <h3 title="Hip Hop Morning">Hip Hop Morning</h3>
+              <h4>Chill hits for an easy-going morning.</h4>
+            </div>
+            <div class="show-menu_item" id="showHide">
+              <div class="image_container">
+                <img
+                  src="./images/spotify_four.jpg"
+                  alt="spotify_items"
+                  class="show-menu_image"
+                />
+                <div class="overlay">
+                  <i class="fa-brands fa-spotify" style="color: green"></i>
+                </div>
+                <h4
+                  style="
+                    font-size: 24px;
+                    font-weight: 900;
+                    color: #ccc;
+                    margin-left: 70px;
+                  "
+                >
+                  Christmas Melodies
+                </h4>
+              </div>
+              <h3 title="Christmas Melodies">Christmas Melodies</h3>
+              <h4>Timeless heartwarming classics from the 1980s.</h4>
+            </div>
+            <div class="show-menu_item" id="showHide">
+              <div class="image_container">
+                <img
+                  src="./images/spotify_five.jpg"
+                  alt="spotify_items"
+                  class="show-menu_image"
+                />
+                <div class="overlay">
+                  <i class="fa-brands fa-spotify" style="color: white"></i>
+                  <h4
+                    style="
+                      font-size: 16px;
+                      font-weight: 900;
+                      color: white;
+                      margin-left: 80px;
+                    "
+                  >
+                    Viral Hits
+                  </h4>
+                </div>
+              </div>
+              <h3 title="Viral Hits">Viral Hits</h3>
+              <h4>Viral, trending and taking off.</h4>
+            </div>
+            <div class="show-menu_item" id="showHide">
+              <div class="image_container">
+                <img
+                  src="./images/spotify_six.jpg"
+                  alt="spotify_items"
+                  class="show-menu_image"
+                />
+                <div class="overlay">
+                  <i class="fa-brands fa-spotify" style="color: white"></i>
+                  <h4
+                    style="
+                      font-size: 16px;
+                      font-weight: 900;
+                      color: white;
+                      margin-left: 90px;
+                      text-align: right;
+                    "
+                  >
+                    Trendy Hits
+                  </h4>
+                </div>
+              </div>
+              <h3 title="Trendy Hits">Trendy Hits</h3>
+              <h4>Cool, filling and particularly lifting music.</h4>
+            </div>
+            <div class="show-menu_item" id="showHide">
+              <div class="image_container">
+                <img
+                  src="./images/mariah.png"
+                  alt="spotify_items"
+                  class="show-menu_image"
+                />
+                <div class="overlay">
+                  <i class="fa-brands fa-spotify" style="color: white"></i>
+                </div>
+                <h4
+                  style="
+                    font-size: 22px;
+                    font-weight: 900;
+                    color: white;
+                    margin-left: 90px;
+                  "
+                >
+                  Cool Classics
+                </h4>
+              </div>
+              <h3 title="Cool classics">Cool Classics</h3>
+              <h4>Classical cool music from the 90s to make you feel good.</h4>
+            </div>
+            <div class="show-menu_item" id="showHide">
+              <div class="image_container">
+                <img
+                  src="./images/spotify_seven.jpg"
+                  alt="spotify_items"
+                  class="show-menu_image"
+                />
+                <div class="overlay">
+                  <i class="fa-brands fa-spotify" style="color: black"></i>
+                  <h4
+                    style="
+                      font-size: 16px;
+                      font-weight: 900;
+                      color: white;
+                      margin-left: 90px;
+                      text-align: right;
+                    "
+                  >
+                    POP RISING
+                  </h4>
+                </div>
+              </div>
+              <h3 title="Pop Rising">Pop Rising</h3>
+              <h4>Who's now and next in pop music.</h4>
+            </div>
+            <div class="show-menu_item" id="showHide">
+              <div class="image_container">
+                <img
+                  src="./images/nicki.png"
+                  alt="spotify_items"
+                  class="show-menu_image"
+                />
+                <div class="overlay">
+                  <i class="fa-brands fa-spotify" style="color: purple"></i>
+                </div>
+                <h4
+                  style="
+                    font-size: 22px;
+                    font-weight: 900;
+                    color: rgb(158, 23, 158);
+                  "
+                >
+                  Rap Caviar
+                </h4>
+              </div>
+              <h3 title="Rap Caviar">Rap Caviar</h3>
+              <h4>New music from Nicki Minaj, NLE Choppa and others.</h4>
+            </div>
+            <div class="show-menu_item" id="showHide">
+              <div class="image_container">
+                <img
+                  src="./images/spotify_eight.jpeg"
+                  alt="spotify_items"
+                  class="show-menu_image"
+                />
+                <div class="overlay">
+                  <i class="fa-brands fa-spotify" style="color: orangered"></i>
+                </div>
+                <h4
+                  style="
+                    font-size: 24px;
+                    font-weight: 900;
+                    color: orangered;
+                    margin-left: 10px;
+                  "
+                >
+                  All Out 80s
+                </h4>
+              </div>
+              <h3 title="All Out 80s">All Out 80s</h3>
+              <h4>Songs of the 1980s. Cover: Micheal Jackson</h4>
+            </div>
+          </div>
+        </div> -->
+        <!-- </div> -->
+        <!-- Footer Section -->
+      </div>
+      <footer></footer>
+    </div>
+    <div style="height: 75px; background-color: white;">
+
+    </div>
   </body>
 </html>
