@@ -78,7 +78,7 @@ body {
 }
 
 .top-nav {
-  background-color: #121212;
+  background-color: #090909;
   height: 62px;
   position: fixed;
   display: flex;
@@ -246,7 +246,7 @@ nav a {
 }
 
 .hero-section {
-  background-color: #1e1e1e;
+  background-color: #121212;
   /* height: 700px; */
   position: relative;
   padding: 8px 20px 20px;
@@ -669,10 +669,12 @@ p {
 }
 
 .footer-main {
-    display: flex;
+    /* display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 100px;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(3,  1fr);
+    gap: 80px;
     padding-bottom: 30px;
 }
 
@@ -716,7 +718,7 @@ p {
 }
 
 /* SIGNUP PAGE BY BLESSING */
-.signup-body{
+  .signup-body{
     background-color: #121212;
     font-family: "Circular";
     color: #ffffff;
@@ -853,6 +855,100 @@ p {
     text-decoration: underline;
     color: #a7a7a7;
   }
+  @media screen and (max-width: 1024px) {
+    .second-components {
+        height: 63vh
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+    .top-nav {
+        /* width: 60vw; */
+        max-width: fit-content;
+    }
+
+    .arrows {
+        display: none
+    }
+
+    .onboarding {
+        padding-left: 10px;
+    }
+
+    .onboarding > a {
+        font-size: 14px;
+        width: 80px
+    }
+
+    .btn {
+        margin-left: -20px
+    }
+
+    .footer-content {
+        flex-direction: column;
+        padding-bottom: 20px
+    }
+
+    .preview > .preview-btn {
+        width: 180px
+    }
+
+    .spotify-logo {
+        width: 80px;
+    }
+
+    .icon-flex .lib-text {
+        font-size: 13px;
+        margin-right: 5px
+    }
+
+    .icon-flex {
+        display: flex;
+        align-items: center
+    }
+
+    .svg {
+        height: 20px
+    }
+
+    .create-playlist {
+        font-size: 9px;
+    }
+
+    .playlist-bars {
+        margin-right: -20px
+    }
+
+    .comment {
+        /* padding: 10px; */
+        gap: 10px;
+        padding-top: 10px;
+        padding-left: -10px;
+        padding-bottom: -20px
+    }
+
+    .second-components {
+        height: 60vh;
+    }
+
+    .comment > p {
+        font-size: 7px
+    }
+
+    .english {
+        font-size: 12px;
+        padding-top: -15px
+    }
+
+      .footer-main {
+
+        grid-template-columns: repeat(2,  1fr);
+        gap: 50px;
+    }
+
+
+  }
+
 
   @media screen and (max-width: 425px) {
     .first-component {
@@ -974,90 +1070,8 @@ p {
         padding: 10px;
         width: 180px
     }
+    .footer-main {
+      grid-template-columns:  1fr;
+      gap: 50px;
   }
-
-  @media screen and (max-width: 768px) {
-    .top-nav {
-        /* width: 60vw; */
-        max-width: fit-content;
-    }
-
-    .arrows {
-        display: none
-    }
-
-    .onboarding {
-        padding-left: 10px;
-    }
-
-    .onboarding > a {
-        font-size: 14px;
-        width: 80px
-    }
-
-    .btn {
-        margin-left: -20px
-    }
-
-    .footer-content {
-        flex-direction: column;
-        padding-bottom: 20px
-    }
-
-    .preview > .preview-btn {
-        width: 180px
-    }
-
-    .spotify-logo {
-        width: 80px;
-    }
-
-    .icon-flex .lib-text {
-        font-size: 13px;
-        margin-right: 5px
-    }
-
-    .icon-flex {
-        display: flex;
-        align-items: center
-    }
-
-    .svg {
-        height: 20px
-    }
-
-    .create-playlist {
-        font-size: 9px;
-    }
-
-    .playlist-bars {
-        margin-right: -20px
-    }
-
-    .comment {
-        /* padding: 10px; */
-        gap: 10px;
-        padding-top: 10px;
-        padding-left: -10px;
-        padding-bottom: -20px
-    }
-
-    .second-components {
-        height: 60vh;
-    }
-
-    .comment > p {
-        font-size: 7px
-    }
-
-    .english {
-        font-size: 12px;
-        padding-top: -15px
-    }
-  }
-
-  @media screen and (max-width: 1024px) {
-    .second-components {
-        height: 63vh
-    }
   }
