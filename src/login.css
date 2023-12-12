@@ -58,7 +58,7 @@
     height: 400px;
     width: 740px;
     margin: auto;
-    border-radius: 8px;
+    border-radius: 8px; 
   }
   
   .login-panel h1 {
@@ -77,6 +77,8 @@
     margin: auto;
     align-items: center;
     justify-content: center;
+    list-style: none;
+    padding: 0 32px;
   }
   
   .login-panel ul li { 
@@ -225,22 +227,6 @@
     }
   }
 
-  .container{
-    box-sizing: border-box;
-    display:flex;
-    gap: 10px;
-    justify-content: center;
-    width:100vw;
-    min-height:100vh;
-    margin-top:32px;
-    padding:32px;
-    background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
-}
-@media (max-width: 767px){
-    .container {
-        background: rgb(0, 0, 0);
-    }
-}
 
 .box{
     box-sizing: border-box;
@@ -248,18 +234,24 @@
     flex-direction: column;
     align-items:center;
     box-sizing: border-box;
-    max-width: 740px;
+    /* max-width: 740px; */
     width:100%;
     margin-top:32px;
     padding:32px 48px;
     border-radius: 8px;
-    background-color: #000000;
+    background-color: rgb(5, 5, 5);
 }
-@media (max-width: 767px){
-    .box {
-        padding: 0;
-
-    }
+@media only screen and (max-width: 600px) {
+  .box {
+    /* display: flex; */
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .box {
+    /* display: flex; */
+    width: 100%;
+  }
 }
 
 form {
@@ -270,10 +262,17 @@ form {
     margin:0px auto;   
     padding-top: 32px;     
 }
-@media (max-width: 767px){
-    .login-form {
-        width: 100%;
-    }
+@media only screen and (max-width: 600px) {
+  form {
+    /* display: flex; */
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  form {
+    /* display: flex; */
+    width: 100%;
+  }
 }
 
 
