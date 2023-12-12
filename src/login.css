@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
     font-family: 'Circular';
     src: url('./Circular/CircularSpotifyText-Black.otf') format('opentype');
     font-weight: 900;
@@ -32,6 +32,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: 'Circular', sans-serif;
   }
   
@@ -58,16 +59,16 @@
     height: 400px;
     width: 740px;
     margin: auto;
-    border-radius: 8px; 
+    border-radius: 8px 8px 0px 0;
+    padding: 60px 0 20px;
   }
   
   .login-panel h1 {
     color: rgba(255, 255, 255);
     text-align: center;
-    padding-top: 30px;
-    font-size: 46px;
+    font-size: 48px;
     font-weight: 700;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     letter-spacing: none;
   }
   
@@ -78,40 +79,43 @@
     align-items: center;
     justify-content: center;
     list-style: none;
-    padding: 0 32px;
+    /* padding: 0 32px; */
   }
-  
-  .login-panel ul li { 
-    border: 1.5px solid rgb(255, 255, 255, 0.5);
-    border-radius: 25px;
-    width: 340px;
-    height: 50px;  
-    display: flex;
-  }
-  
+
   li a {
+    width: 324px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 25px;
     display: flex;
     flex-direction: row;
     text-decoration: none;
+    padding: 10px;
+    /* width: 100%; */
+
   }
-  
-  ul a .btn {
+
+  li a .btn {
     display: flex;
-    margin: auto;
     align-items: center;
     justify-content: center;
-    background-color: rgb(5, 5, 5);
+    background:none;
     color: #ffffff;
     border: none;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 0;
+    margin: auto;
   }
   
-  .login-panel .apple {
+  
+  /* .login-panel .apple {
     margin-left: 15px;
   }
-  
+
+  .login-panel .apple {
+    margin-left: 15px;
+  } */
+
   .login-panel li {
     list-style-type: none;
     margin: 0;
@@ -121,9 +125,7 @@
   
   .login-panel a img {
     align-items: center;
-    margin-left: 30px;
-    margin-right: 20px;
-    width: 25px;
+   margin-left: 35px;
   }
   
   .login-panel .plain {
@@ -132,12 +134,14 @@
     justify-content: space-evenly;
   }
   
-  ul li:hover {
-    border: 1.5px solid #ffffff;
+  li a:hover {
+    border: 1px solid #ffffff;
   }
   
-  ul li:focus {
-    border: 4px double #ffffff;
+  li a:focus {
+   outline: 4px solid #ffffff;
+   outline-offset: 2px;
+   border: 1px solid rgb(255, 255, 255, 0.5);
   }
   
   @media only screen and (max-width: 800px) {
@@ -178,9 +182,9 @@
       justify-content: center;
     }
   
-    .login-panel .plain {
+    /* .login-panel .plain {
       margin-left: 80px;
-    }
+    } */
   }
   
   @media only screen and (max-width: 600px) {
@@ -222,9 +226,9 @@
       justify-content: center;
     }
   
-    .login-panel .plain {
+    /* .login-panel .plain {
       margin-left: 80px;
-    }
+    } */
   }
 
 
@@ -235,16 +239,16 @@
     align-items:center;
     box-sizing: border-box;
     /* max-width: 740px; */
-    width:100%;
-    margin-top:32px;
-    padding:32px 48px;
-    border-radius: 8px;
+    width: 100%;
+    padding: 32px 30px;
+    border-radius: 0 0 8px 8px;
     background-color: rgb(5, 5, 5);
 }
 @media only screen and (max-width: 600px) {
   .box {
-    /* display: flex; */
     width: 100%;
+    padding: 0 20px;
+
   }
 }
 @media only screen and (max-width: 800px) {
@@ -496,7 +500,7 @@ hr {
 
 @media (max-width: 767px){
     hr {
-        display: none;
+        width: 100%;
     }
 }
 
