@@ -112,7 +112,7 @@ input::placeholder {
     }
 
     /* For Responsiveness across all devices */
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 425px) {
     .logo-image img{
         width: 80px;
     }
@@ -144,4 +144,18 @@ input::placeholder {
           margin: 0;
           }
           
+  }
+
+  @media only screen and (max-width: 768px) {
+    .num-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 20px; */
+      }
+
+      select{ 
+        margin: 19px 0;  
+        padding: 12px 10px 12px 12px;
+        }
   }
